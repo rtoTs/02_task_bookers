@@ -4,12 +4,12 @@
 
 	<div class="book-title">
 		Title<br>
-		<%= f.text_field :title %>
+		<%= f.text_field :title, class: "book_title" %>
 	</div>
 
 	<div class="book-body">
 		Body<br>
-		<%= f.text_area :body %>
+		<%= f.text_area :body, class: "book_body" %>
 	</div>
 
 	<div class="book-action">
@@ -18,5 +18,5 @@
 
 <% end %>
 
-<%= link_to "Show", book_path(@book), class: "edit_#{params[:id]}" %> | 
+<%= link_to "Show", book_path(@book), class: "show_#{params[:id]}" %> | 
 <%= link_to "Back", books_path, class: "back"%>
